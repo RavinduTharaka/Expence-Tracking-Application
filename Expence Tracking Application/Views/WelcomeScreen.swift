@@ -30,7 +30,8 @@ struct WelcomeScreen: View {
                     
                     NavigationLink(
                         destination: SignIn()
-                            .navigationBarHidden(true),
+//                            .navigationBarHidden(true)
+                        ,
                         label: {
                             Text("Sign In")
                                 .font(.title3)
@@ -44,13 +45,14 @@ struct WelcomeScreen: View {
                                 .padding(.vertical)
                         }
                     )
-                    //                .navigationBarHidden(true)
+                                    .navigationBarHidden(true)
                     
                     HStack{
                         Text("New around here? ")
                         NavigationLink(
                             destination: SignUp()
-                                .navigationBarHidden(true),
+//                                .navigationBarHidden(true)
+                            ,
                             label: {
                                 Text("Sign Up")
                                     .foregroundColor(Color("PrimaryColor"))
