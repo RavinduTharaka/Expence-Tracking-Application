@@ -11,7 +11,7 @@ import SwiftUI
 struct Expence_Tracking_ApplicationApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            SplashScreen()
         }
     }
 }

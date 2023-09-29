@@ -13,28 +13,39 @@ struct SplashScreen: View {
     @State private var opacity = 0.5
     
     var body: some View {
-        VStack{
+        if isActive{
+            ContentView()
+        }
+        else{
             VStack{
-                Image("expence")
-                    .font(.system(size: 80))
-                Text("Expence Tracking Application")
-                    .font(Font.custom("Baskerville-Bold",size: 26))
-                    .fontWeight(.bold)
-                    .foregroundColor(Color("PrimaryColor"))
-                    .padding(.vertical)
-                
+                VStack{
+                    Image("expence")
+                        .font(.system(size: 80))
+                    Text("Expence Tracking Application")
+                        .font(Font.custom("Baskerville-Bold",size: 26))
+                        .fontWeight(.bold)
+                        .foregroundColor(Color("PrimaryColor"))
+                        .padding(.vertical)
+                    
+                }
+                .scaleEffect(size)
+                .opacity(opacity)
+                .onAppear{
+                    withAnimation(.easeIn(duration: 1.2)){
+                        self.size = 0.9
+                        self.opacity = 1.0
+                    }
+                }
             }
-            .scaleEffect(size)
-            .opacity(opacity)
             .onAppear{
-                withAnimation(.easeIn(duration: 1.2)){
-                    self.size = 0.9
-                    self.opacity = 1.0
+                DispatchQueue.main.asyncAfter(deadline: .now() + 2.0){
+                    withAnimation{
+                        self.isActive = true
+                    }
                 }
             }
         }
-    }
-}
+    }}
 
 struct SplashScreen_Previews: PreviewProvider {
     static var previews: some View {
