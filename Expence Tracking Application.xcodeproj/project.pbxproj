@@ -14,7 +14,10 @@
 		B5D62AAB2AC60211009BF195 /* SignUp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5D62AAA2AC60211009BF195 /* SignUp.swift */; };
 		B5D62AAD2AC60CFD009BF195 /* WelcomeScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5D62AAC2AC60CFD009BF195 /* WelcomeScreen.swift */; };
 		B5D62AAF2AC61EB8009BF195 /* SignIn.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5D62AAE2AC61EB8009BF195 /* SignIn.swift */; };
-		B5D62AB22AC62D81009BF195 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5D62AB12AC62D81009BF195 /* LoginViewModel.swift */; };
+		B5D62AB92AC74A61009BF195 /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5D62AB82AC74A61009BF195 /* UserModel.swift */; };
+		B5D62AC12AC75596009BF195 /* SignupViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5D62AC02AC75596009BF195 /* SignupViewModel.swift */; };
+		B5D62AC42AC75D03009BF195 /* APICaller.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5D62AC32AC75D03009BF195 /* APICaller.swift */; };
+		B5D62AC62AC76A9F009BF195 /* SigninViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5D62AC52AC76A9F009BF195 /* SigninViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,7 +29,10 @@
 		B5D62AAA2AC60211009BF195 /* SignUp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUp.swift; sourceTree = "<group>"; };
 		B5D62AAC2AC60CFD009BF195 /* WelcomeScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeScreen.swift; sourceTree = "<group>"; };
 		B5D62AAE2AC61EB8009BF195 /* SignIn.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignIn.swift; sourceTree = "<group>"; };
-		B5D62AB12AC62D81009BF195 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
+		B5D62AB82AC74A61009BF195 /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
+		B5D62AC02AC75596009BF195 /* SignupViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupViewModel.swift; sourceTree = "<group>"; };
+		B5D62AC32AC75D03009BF195 /* APICaller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APICaller.swift; sourceTree = "<group>"; };
+		B5D62AC52AC76A9F009BF195 /* SigninViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SigninViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +65,8 @@
 		B5D62A982ABD92E6009BF195 /* Expence Tracking Application */ = {
 			isa = PBXGroup;
 			children = (
+				B5D62AC22AC75CD6009BF195 /* Networking */,
+				B5D62AB62AC646A9009BF195 /* Model */,
 				B5D62AB02AC62D48009BF195 /* ViewModel */,
 				B5D62AA72AC601BD009BF195 /* Views */,
 				B5D62A992ABD92E6009BF195 /* Expence_Tracking_ApplicationApp.swift */,
@@ -90,9 +98,26 @@
 		B5D62AB02AC62D48009BF195 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
-				B5D62AB12AC62D81009BF195 /* LoginViewModel.swift */,
+				B5D62AC02AC75596009BF195 /* SignupViewModel.swift */,
+				B5D62AC52AC76A9F009BF195 /* SigninViewModel.swift */,
 			);
 			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		B5D62AB62AC646A9009BF195 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				B5D62AB82AC74A61009BF195 /* UserModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		B5D62AC22AC75CD6009BF195 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				B5D62AC32AC75D03009BF195 /* APICaller.swift */,
+			);
+			path = Networking;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -166,11 +191,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				B5D62A9C2ABD92E6009BF195 /* ContentView.swift in Sources */,
+				B5D62AB92AC74A61009BF195 /* UserModel.swift in Sources */,
+				B5D62AC12AC75596009BF195 /* SignupViewModel.swift in Sources */,
+				B5D62AC62AC76A9F009BF195 /* SigninViewModel.swift in Sources */,
 				B5D62AAB2AC60211009BF195 /* SignUp.swift in Sources */,
-				B5D62AB22AC62D81009BF195 /* LoginViewModel.swift in Sources */,
 				B5D62AAF2AC61EB8009BF195 /* SignIn.swift in Sources */,
 				B5D62AAD2AC60CFD009BF195 /* WelcomeScreen.swift in Sources */,
 				B5D62A9A2ABD92E6009BF195 /* Expence_Tracking_ApplicationApp.swift in Sources */,
+				B5D62AC42AC75D03009BF195 /* APICaller.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
