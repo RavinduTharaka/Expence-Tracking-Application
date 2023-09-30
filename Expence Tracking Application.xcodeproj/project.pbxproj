@@ -18,12 +18,14 @@
 		B5D62AC12AC75596009BF195 /* SignupViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5D62AC02AC75596009BF195 /* SignupViewModel.swift */; };
 		B5D62AC42AC75D03009BF195 /* APICaller.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5D62AC32AC75D03009BF195 /* APICaller.swift */; };
 		B5D62AC62AC76A9F009BF195 /* SigninViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5D62AC52AC76A9F009BF195 /* SigninViewModel.swift */; };
-		B5D62AC82AC76F7A009BF195 /* HomeScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5D62AC72AC76F7A009BF195 /* HomeScreen.swift */; };
 		B5D62ACA2AC770CC009BF195 /* SplashScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5D62AC92AC770CC009BF195 /* SplashScreen.swift */; };
 		B5D62ACC2AC78D7E009BF195 /* AddExpencesScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5D62ACB2AC78D7E009BF195 /* AddExpencesScreen.swift */; };
 		B5D62ACE2AC78D9A009BF195 /* BudgetAllocationScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5D62ACD2AC78D9A009BF195 /* BudgetAllocationScreen.swift */; };
 		B5D62AD02AC78E49009BF195 /* AddCategoryScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5D62ACF2AC78E49009BF195 /* AddCategoryScreen.swift */; };
 		B5D62AD22AC7D52C009BF195 /* SignInScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5D62AD12AC7D52C009BF195 /* SignInScreen.swift */; };
+		B5D62AD62AC7F6F0009BF195 /* HomeScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5D62AD52AC7F6F0009BF195 /* HomeScreen.swift */; };
+		B5D62AD82AC8013E009BF195 /* CategoryModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5D62AD72AC8013E009BF195 /* CategoryModel.swift */; };
+		B5D62ADA2AC82B84009BF195 /* AddCategoryViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5D62AD92AC82B84009BF195 /* AddCategoryViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,12 +41,14 @@
 		B5D62AC02AC75596009BF195 /* SignupViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupViewModel.swift; sourceTree = "<group>"; };
 		B5D62AC32AC75D03009BF195 /* APICaller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APICaller.swift; sourceTree = "<group>"; };
 		B5D62AC52AC76A9F009BF195 /* SigninViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SigninViewModel.swift; sourceTree = "<group>"; };
-		B5D62AC72AC76F7A009BF195 /* HomeScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreen.swift; sourceTree = "<group>"; };
 		B5D62AC92AC770CC009BF195 /* SplashScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashScreen.swift; sourceTree = "<group>"; };
 		B5D62ACB2AC78D7E009BF195 /* AddExpencesScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddExpencesScreen.swift; sourceTree = "<group>"; };
 		B5D62ACD2AC78D9A009BF195 /* BudgetAllocationScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BudgetAllocationScreen.swift; sourceTree = "<group>"; };
 		B5D62ACF2AC78E49009BF195 /* AddCategoryScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddCategoryScreen.swift; sourceTree = "<group>"; };
 		B5D62AD12AC7D52C009BF195 /* SignInScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInScreen.swift; sourceTree = "<group>"; };
+		B5D62AD52AC7F6F0009BF195 /* HomeScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreen.swift; sourceTree = "<group>"; };
+		B5D62AD72AC8013E009BF195 /* CategoryModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryModel.swift; sourceTree = "<group>"; };
+		B5D62AD92AC82B84009BF195 /* AddCategoryViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddCategoryViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,12 +107,12 @@
 				B5D62AAC2AC60CFD009BF195 /* WelcomeScreen.swift */,
 				B5D62AAA2AC60211009BF195 /* SignUp.swift */,
 				B5D62AAE2AC61EB8009BF195 /* SignIn.swift */,
-				B5D62AC72AC76F7A009BF195 /* HomeScreen.swift */,
 				B5D62AC92AC770CC009BF195 /* SplashScreen.swift */,
 				B5D62ACB2AC78D7E009BF195 /* AddExpencesScreen.swift */,
 				B5D62ACD2AC78D9A009BF195 /* BudgetAllocationScreen.swift */,
 				B5D62ACF2AC78E49009BF195 /* AddCategoryScreen.swift */,
 				B5D62AD12AC7D52C009BF195 /* SignInScreen.swift */,
+				B5D62AD52AC7F6F0009BF195 /* HomeScreen.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -118,6 +122,7 @@
 			children = (
 				B5D62AC02AC75596009BF195 /* SignupViewModel.swift */,
 				B5D62AC52AC76A9F009BF195 /* SigninViewModel.swift */,
+				B5D62AD92AC82B84009BF195 /* AddCategoryViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -126,6 +131,7 @@
 			isa = PBXGroup;
 			children = (
 				B5D62AB82AC74A61009BF195 /* UserModel.swift */,
+				B5D62AD72AC8013E009BF195 /* CategoryModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -215,12 +221,14 @@
 				B5D62AAB2AC60211009BF195 /* SignUp.swift in Sources */,
 				B5D62AD02AC78E49009BF195 /* AddCategoryScreen.swift in Sources */,
 				B5D62AAF2AC61EB8009BF195 /* SignIn.swift in Sources */,
+				B5D62ADA2AC82B84009BF195 /* AddCategoryViewModel.swift in Sources */,
 				B5D62ACC2AC78D7E009BF195 /* AddExpencesScreen.swift in Sources */,
 				B5D62ACA2AC770CC009BF195 /* SplashScreen.swift in Sources */,
-				B5D62AC82AC76F7A009BF195 /* HomeScreen.swift in Sources */,
 				B5D62ACE2AC78D9A009BF195 /* BudgetAllocationScreen.swift in Sources */,
 				B5D62AD22AC7D52C009BF195 /* SignInScreen.swift in Sources */,
+				B5D62AD62AC7F6F0009BF195 /* HomeScreen.swift in Sources */,
 				B5D62AAD2AC60CFD009BF195 /* WelcomeScreen.swift in Sources */,
+				B5D62AD82AC8013E009BF195 /* CategoryModel.swift in Sources */,
 				B5D62A9A2ABD92E6009BF195 /* Expence_Tracking_ApplicationApp.swift in Sources */,
 				B5D62AC42AC75D03009BF195 /* APICaller.swift in Sources */,
 			);

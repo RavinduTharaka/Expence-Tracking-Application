@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct Send: Encodable {
+struct UserModel: Encodable {
     let email: String
     let password: String
     let confirmpassword: String
