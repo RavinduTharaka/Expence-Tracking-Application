@@ -29,7 +29,7 @@ struct WelcomeScreen: View {
                         }
                     
                     NavigationLink(
-                        destination: SignIn()
+                        destination: SignInScreen()
 //                            .navigationBarHidden(true)
                         ,
                         label: {
