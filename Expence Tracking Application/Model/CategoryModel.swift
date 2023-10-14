@@ -8,9 +8,8 @@
 import Foundation
 
 struct CategoryModel: Codable {
-    let Category_id: Int
-    let Category_name: String
-   
-
-    
+//    var id: Int? // If you have an ID property
+    var Category_name: String
+//    var description: String
+    // Add other properties as needed
 }

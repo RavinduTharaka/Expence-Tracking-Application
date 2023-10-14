@@ -8,17 +8,59 @@
 import Foundation
 import SwiftUI
 
-class SignupViewModel : ObservableObject {
 
-    @Published var name : String = ""
-    @Published var email : String = ""
-    @Published var password : String = ""
-    @Published var confirmPassword : String = ""
+class SignupViewModel: ObservableObject {
+    @Published var name = ""
+    @Published var email = ""
+    @Published var password = ""
+    @Published var confirmPassword = ""
+    
+    func register(completion: @escaping (Bool) -> Void) {
+        let parameters = [
+            "name": name,
+            "email": email,
+            "password": password,
+            "confirmPassword": confirmPassword
+        ]
 
-    @Published var showSignInView : Bool = false
+        guard let url = URL(string: "http://127.0.0.1:8000/api/register") else {
+            completion(false)
+            return
+        }
 
+        var request = URLRequest(url: url)
+        request.httpMethod = "POST"
+        request.httpBody = try? JSONSerialization.data(withJSONObject: parameters)
+        request.setValue("application/json", forHTTPHeaderField: "Content-Type")
 
+        let session = URLSession.shared
+        session.dataTask(with: request) { data, response, error in
+            if let error = error {
+                print("Error: \(error)")
+                completion(false)
+                return
+            }
+            guard let data = data else {
+                print("No data")
+                completion(false)
+                return
+            }
+            do {
+                if let json = try JSONSerialization.jsonObject(with: data, options: []) as? [String: Any],
+                   let token = json["token"] as? String {
+                    UserDefaults.standard.set(token, forKey: "token")
+                    DispatchQueue.main.async {
+                        completion(true)
+                    }
+                }
+            } catch let error {
+                print("Error serializing JSON: \(error)")
+                completion(false)
+            }
+        }.resume()
+    }
 }
+
 
 
 //import SwiftUI

@@ -9,23 +9,30 @@ import SwiftUI
 
 struct HomeScreen: View {
     var body: some View {
-        
-        TabView{
-            AddCategoryScreen().tabItem(){
-                Image(systemName: "list.bullet.circle")
-                Text("Category")
+        NavigationView {
+            TabView{
+                AddCategoryScreen().tabItem(){
+                    Image(systemName: "list.bullet.circle")
+                    Text("Category")
+                }
+                
+                AddExpensesScreen().tabItem(){
+                    Image(systemName: "dollarsign.circle.fill")
+                    Text("Expences")
+                }
+                
+                BudgetAllocationView().tabItem(){
+                    Image(systemName: "list.bullet.clipboard")
+                    Text("Budget")
+                }
+                
+                ReportView().tabItem(){
+                    Image(systemName: "chart.bar.xaxis")
+                    Text("Analytics")
+                }
+                
             }
-            
-            AddExpencesScreen().tabItem(){
-                Image(systemName: "dollarsign.circle.fill")
-                Text("Expences")
-            }
-            
-            BudgetAllocationScreen().tabItem(){
-                Image(systemName: "list.bullet.clipboard")
-                Text("Budget")
-            }
-        }
+        }.navigationBarHidden(true)
     }
 }
 

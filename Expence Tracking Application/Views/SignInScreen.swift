@@ -146,13 +146,13 @@
 import SwiftUI
 
 struct SignInScreen: View {
-    @State private var email = ""
-    @State private var password = ""
-    @State private var errorMessage = ""
-    @State private var isSignedIn = false
-
+//    @State private var email = ""
+//    @State private var password = ""
+//    @State private var errorMessage = ""
+//    @State private var isSignedIn = false
+    @State private var isNavigatingToHome = false
+    @StateObject var loginVM: SigninViewModel = SigninViewModel()
     var body: some View {
-        @StateObject var loginVM: SigninViewModel = SigninViewModel()
         NavigationView {
             ZStack{
                 Color("PrimaryColor").ignoresSafeArea()
@@ -164,18 +164,27 @@ struct SignInScreen: View {
                         .font(.largeTitle)
                         .fontWeight(.bold)
                         .padding()
-                    TextField("Email", text: $email)
+                    TextField("Email", text: $loginVM.email)
                         .padding()
                         .frame(width: 300, height: 50)
                         .background(Color.black.opacity(0.05))
                         .cornerRadius(10)
-                    SecureField("Password", text: $password)
+                    SecureField("Password", text: $loginVM.password)
                         .padding()
                         .frame(width: 300, height: 50)
                         .background(Color.black.opacity(0.05))
                         .cornerRadius(10)
                     Button(action: {
-                        signInButtonTapped()
+                        loginVM.signInButtonTapped{ success in
+                            if success {
+                                // Handle successful save, e.g., show an alert
+                                print("Data saved successfully")
+                                isNavigatingToHome = true
+                            } else {
+                                // Handle save failure, e.g., show an alert
+                                print("Data save failed")
+                            }
+                        }
                     }) {
                         Text("Sign In")
                             .foregroundColor(.white)
@@ -186,60 +195,60 @@ struct SignInScreen: View {
                     .padding()
 
                     // Use NavigationLink to navigate to HomeScreen
-                    NavigationLink(destination: HomeView(), isActive: $isSignedIn) {
+                    NavigationLink(destination: HomeScreen(), isActive: $loginVM.isSignedIn) {
                         
                        
                     }
                     .navigationBarHidden(true)
 
-                    Text(errorMessage)
+                    Text(loginVM.errorMessage)
                         .foregroundColor(.red)
                         .font(.headline)
                         .padding(.top)
                     Spacer()
                 }
                 .padding()
-                .onAppear(perform: animate)
-            }
+                .onAppear(perform: loginVM.animate)
+            }.navigationBarHidden(true)
         }
     }
 
     // Placeholder for the sign-in button action
-    private func signInButtonTapped() {
-        errorMessage = ""
-        
-        Task {
-            do {
-                let token = try await performSignIn()
-                UserDefaults.standard.set(token, forKey: "token")
-                isSignedIn = true // Activate the NavigationLink
-            } catch {
-                errorMessage = "Error: \(error)"
-            }
-            
-        }
-    }
+//    private func signInButtonTapped() {
+//        errorMessage = ""
+//
+//        Task {
+//            do {
+//                let token = try await performSignIn()
+//                UserDefaults.standard.set(token, forKey: "token")
+//                isSignedIn = true // Activate the NavigationLink
+//            } catch {
+//                errorMessage = "Error: \(error)"
+//            }
+//
+//        }
+//    }
 
     // Placeholder for the sign-in logic
-    private func performSignIn() async throws -> String {
-        // Your sign-in logic here
-        // ...
-
-        // If successful, return the token
-        return "your_token_here"
-    }
+//    private func performSignIn() async throws -> String {
+//        // Your sign-in logic here
+//        // ...
+//
+//        // If successful, return the token
+//        return "your_token_here"
+//    }
 
     // Placeholder for the animation function
-    private func animate() {
-        // Implement your view animations here
-    }
+//    private func animate() {
+//        // Implement your view animations here
+//    }
 }
 
-struct HomeView: View {
-    var body: some View {
-        Text("Welcome to the HomeScreen!")
-    }
-}
+//struct HomeView: View {
+//    var body: some View {
+//        Text("Welcome to the HomeScreen!")
+//    }
+//}
 
 struct SignInScreen_Previews: PreviewProvider {
     static var previews: some View {

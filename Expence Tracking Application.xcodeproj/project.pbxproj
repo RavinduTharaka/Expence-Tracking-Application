@@ -7,6 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B57346612AD3D4A10059FD98 /* CategoryVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = B57346602AD3D4A10059FD98 /* CategoryVM.swift */; };
+		B573466D2AD49CC20059FD98 /* getCategoryModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B573466C2AD49CC20059FD98 /* getCategoryModel.swift */; };
+		B573466F2AD4A0FF0059FD98 /* BudgetModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B573466E2AD4A0FF0059FD98 /* BudgetModel.swift */; };
+		B57346712AD4A73E0059FD98 /* BudgetAllocationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B57346702AD4A73E0059FD98 /* BudgetAllocationViewModel.swift */; };
+		B57346732AD4B9E70059FD98 /* ExpenceModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B57346722AD4B9E70059FD98 /* ExpenceModel.swift */; };
+		B57346752AD4BAA30059FD98 /* ExpenceVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = B57346742AD4BAA30059FD98 /* ExpenceVM.swift */; };
+		B57346772AD5DCCB0059FD98 /* SignupModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B57346762AD5DCCB0059FD98 /* SignupModel.swift */; };
+		B57346792AD5E3BA0059FD98 /* SigninModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B57346782AD5E3BA0059FD98 /* SigninModel.swift */; };
+		B57346812AD67C140059FD98 /* ReportVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = B57346802AD67C140059FD98 /* ReportVM.swift */; };
+		B57346832AD67C4F0059FD98 /* ReportModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B57346822AD67C4F0059FD98 /* ReportModel.swift */; };
 		B5D62A9A2ABD92E6009BF195 /* Expence_Tracking_ApplicationApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5D62A992ABD92E6009BF195 /* Expence_Tracking_ApplicationApp.swift */; };
 		B5D62A9C2ABD92E6009BF195 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5D62A9B2ABD92E6009BF195 /* ContentView.swift */; };
 		B5D62A9E2ABD92E7009BF195 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B5D62A9D2ABD92E7009BF195 /* Assets.xcassets */; };
@@ -26,9 +36,20 @@
 		B5D62AD62AC7F6F0009BF195 /* HomeScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5D62AD52AC7F6F0009BF195 /* HomeScreen.swift */; };
 		B5D62AD82AC8013E009BF195 /* CategoryModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5D62AD72AC8013E009BF195 /* CategoryModel.swift */; };
 		B5D62ADA2AC82B84009BF195 /* AddCategoryViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5D62AD92AC82B84009BF195 /* AddCategoryViewModel.swift */; };
+		B5D62ADC2AC84DB8009BF195 /* AnalyticScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5D62ADB2AC84DB8009BF195 /* AnalyticScreen.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		B57346602AD3D4A10059FD98 /* CategoryVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryVM.swift; sourceTree = "<group>"; };
+		B573466C2AD49CC20059FD98 /* getCategoryModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = getCategoryModel.swift; sourceTree = "<group>"; };
+		B573466E2AD4A0FF0059FD98 /* BudgetModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BudgetModel.swift; sourceTree = "<group>"; };
+		B57346702AD4A73E0059FD98 /* BudgetAllocationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BudgetAllocationViewModel.swift; sourceTree = "<group>"; };
+		B57346722AD4B9E70059FD98 /* ExpenceModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpenceModel.swift; sourceTree = "<group>"; };
+		B57346742AD4BAA30059FD98 /* ExpenceVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpenceVM.swift; sourceTree = "<group>"; };
+		B57346762AD5DCCB0059FD98 /* SignupModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupModel.swift; sourceTree = "<group>"; };
+		B57346782AD5E3BA0059FD98 /* SigninModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SigninModel.swift; sourceTree = "<group>"; };
+		B57346802AD67C140059FD98 /* ReportVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReportVM.swift; sourceTree = "<group>"; };
+		B57346822AD67C4F0059FD98 /* ReportModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReportModel.swift; sourceTree = "<group>"; };
 		B5D62A962ABD92E6009BF195 /* Expence Tracking Application.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Expence Tracking Application.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B5D62A992ABD92E6009BF195 /* Expence_Tracking_ApplicationApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Expence_Tracking_ApplicationApp.swift; sourceTree = "<group>"; };
 		B5D62A9B2ABD92E6009BF195 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -49,6 +70,7 @@
 		B5D62AD52AC7F6F0009BF195 /* HomeScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreen.swift; sourceTree = "<group>"; };
 		B5D62AD72AC8013E009BF195 /* CategoryModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryModel.swift; sourceTree = "<group>"; };
 		B5D62AD92AC82B84009BF195 /* AddCategoryViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddCategoryViewModel.swift; sourceTree = "<group>"; };
+		B5D62ADB2AC84DB8009BF195 /* AnalyticScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnalyticScreen.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,6 +135,7 @@
 				B5D62ACF2AC78E49009BF195 /* AddCategoryScreen.swift */,
 				B5D62AD12AC7D52C009BF195 /* SignInScreen.swift */,
 				B5D62AD52AC7F6F0009BF195 /* HomeScreen.swift */,
+				B5D62ADB2AC84DB8009BF195 /* AnalyticScreen.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -123,6 +146,10 @@
 				B5D62AC02AC75596009BF195 /* SignupViewModel.swift */,
 				B5D62AC52AC76A9F009BF195 /* SigninViewModel.swift */,
 				B5D62AD92AC82B84009BF195 /* AddCategoryViewModel.swift */,
+				B57346602AD3D4A10059FD98 /* CategoryVM.swift */,
+				B57346702AD4A73E0059FD98 /* BudgetAllocationViewModel.swift */,
+				B57346742AD4BAA30059FD98 /* ExpenceVM.swift */,
+				B57346802AD67C140059FD98 /* ReportVM.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -132,6 +159,12 @@
 			children = (
 				B5D62AB82AC74A61009BF195 /* UserModel.swift */,
 				B5D62AD72AC8013E009BF195 /* CategoryModel.swift */,
+				B573466C2AD49CC20059FD98 /* getCategoryModel.swift */,
+				B573466E2AD4A0FF0059FD98 /* BudgetModel.swift */,
+				B57346722AD4B9E70059FD98 /* ExpenceModel.swift */,
+				B57346762AD5DCCB0059FD98 /* SignupModel.swift */,
+				B57346782AD5E3BA0059FD98 /* SigninModel.swift */,
+				B57346822AD67C4F0059FD98 /* ReportModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -215,22 +248,33 @@
 			buildActionMask = 2147483647;
 			files = (
 				B5D62A9C2ABD92E6009BF195 /* ContentView.swift in Sources */,
+				B57346772AD5DCCB0059FD98 /* SignupModel.swift in Sources */,
 				B5D62AB92AC74A61009BF195 /* UserModel.swift in Sources */,
+				B5D62ADC2AC84DB8009BF195 /* AnalyticScreen.swift in Sources */,
+				B573466F2AD4A0FF0059FD98 /* BudgetModel.swift in Sources */,
 				B5D62AC12AC75596009BF195 /* SignupViewModel.swift in Sources */,
+				B57346612AD3D4A10059FD98 /* CategoryVM.swift in Sources */,
 				B5D62AC62AC76A9F009BF195 /* SigninViewModel.swift in Sources */,
 				B5D62AAB2AC60211009BF195 /* SignUp.swift in Sources */,
+				B57346732AD4B9E70059FD98 /* ExpenceModel.swift in Sources */,
 				B5D62AD02AC78E49009BF195 /* AddCategoryScreen.swift in Sources */,
 				B5D62AAF2AC61EB8009BF195 /* SignIn.swift in Sources */,
 				B5D62ADA2AC82B84009BF195 /* AddCategoryViewModel.swift in Sources */,
+				B57346832AD67C4F0059FD98 /* ReportModel.swift in Sources */,
 				B5D62ACC2AC78D7E009BF195 /* AddExpencesScreen.swift in Sources */,
 				B5D62ACA2AC770CC009BF195 /* SplashScreen.swift in Sources */,
+				B573466D2AD49CC20059FD98 /* getCategoryModel.swift in Sources */,
 				B5D62ACE2AC78D9A009BF195 /* BudgetAllocationScreen.swift in Sources */,
+				B57346712AD4A73E0059FD98 /* BudgetAllocationViewModel.swift in Sources */,
 				B5D62AD22AC7D52C009BF195 /* SignInScreen.swift in Sources */,
 				B5D62AD62AC7F6F0009BF195 /* HomeScreen.swift in Sources */,
 				B5D62AAD2AC60CFD009BF195 /* WelcomeScreen.swift in Sources */,
 				B5D62AD82AC8013E009BF195 /* CategoryModel.swift in Sources */,
+				B57346812AD67C140059FD98 /* ReportVM.swift in Sources */,
+				B57346752AD4BAA30059FD98 /* ExpenceVM.swift in Sources */,
 				B5D62A9A2ABD92E6009BF195 /* Expence_Tracking_ApplicationApp.swift in Sources */,
 				B5D62AC42AC75D03009BF195 /* APICaller.swift in Sources */,
+				B57346792AD5E3BA0059FD98 /* SigninModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

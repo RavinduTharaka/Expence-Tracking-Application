@@ -9,8 +9,14 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-//        WelcomeScreen()
-        HomeScreen()
+        WelcomeScreen()
+//        HomeScreen()
+//      AddCategoryScreen()
+//        SignUp()
+//        BudgetAllocationView()
+//        AddExpencesScreen()
+//        SignInScreen()
+//        AddExpensesScreen()
     }
 }
 
